@@ -1,14 +1,17 @@
-public class Dog {
+public class Dog extends Animal {
 
-    String name;
-    int age;
 
-    public Dog(String name, int age) {
-        this.name = name;
-        this.age = age;
+    private boolean smellingSense;
+
+    public Dog(String name, boolean smellingSense) {
+        super(name);
+        this.smellingSense = smellingSense;
+
     }
 
-    public void woof(){
-        System.out.println("Barks!");
+   @Override
+    public String makeSound(){
+        return "woof";
     }
+
 }

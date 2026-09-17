@@ -4,7 +4,7 @@ public class Workshop1 {
         double sum = 0;
 
         for (int i = 0; i < classroom.length ; i++) {
-            sum += classroom[i].examScore;
+                sum += classroom[i].examScore;
 
         }
             return sum / classroom.length;
